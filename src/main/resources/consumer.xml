@@ -26,6 +26,9 @@
 	<!-- 幂等（设置重试次数）【查询、删除、修改】、非幂等（不能设置重试次数）【新增】 -->
 	<dubbo:reference interface="com.ping.service.UserService" id="userService" ></dubbo:reference>
 		
+	<!-- 自动发现监控中心 -->
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
+	
 	
 	
 </beans>
